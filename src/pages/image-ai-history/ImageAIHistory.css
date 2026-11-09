@@ -1,0 +1,683 @@
+/* =========================================================
+   IMAGE AI HISTORY PAGE
+========================================================= */
+
+.image-history-page {
+    min-height: 100vh;
+
+    padding: 32px;
+
+    background: #f4f7fc;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.image-history-header {
+    max-width: 1400px;
+
+    margin: 0 auto 26px;
+
+    padding: 24px 28px;
+
+    background: #ffffff;
+
+    border: 1px solid #e3e8f0;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(15, 23, 42, 0.06);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+.history-header-left {
+    display: flex;
+
+    align-items: center;
+
+    gap: 17px;
+}
+
+
+.history-header-icon {
+    width: 56px;
+    height: 56px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #1d4ed8
+        );
+
+    color: #ffffff;
+
+    box-shadow:
+        0 9px 22px rgba(37, 99, 235, 0.22);
+}
+
+
+.history-header-icon svg {
+    font-size: 29px;
+}
+
+
+.history-title {
+    font-size: 26px !important;
+
+    font-weight: 800 !important;
+
+    color: #172033 !important;
+
+    margin-bottom: 5px !important;
+}
+
+
+.history-subtitle {
+    font-size: 13px !important;
+
+    color: #64748b !important;
+
+    line-height: 1.6 !important;
+}
+
+
+/* =========================================================
+   REFRESH BUTTON
+========================================================= */
+
+.history-refresh-button {
+    min-height: 42px !important;
+
+    border-radius: 10px !important;
+
+    border-color: #cbd5e1 !important;
+
+    color: #334155 !important;
+
+    text-transform: none !important;
+
+    font-size: 13px !important;
+
+    font-weight: 600 !important;
+}
+
+
+.history-refresh-button:hover {
+    border-color: #2563eb !important;
+
+    background: #eff6ff !important;
+
+    color: #2563eb !important;
+}
+
+
+/* =========================================================
+   ALERT
+========================================================= */
+
+.history-alert {
+    max-width: 1400px;
+
+    margin: 0 auto 22px !important;
+
+    border-radius: 12px !important;
+
+    font-size: 13px !important;
+}
+
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.history-loading {
+    min-height: 70vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+
+.history-loading .MuiTypography-root {
+    font-size: 14px;
+
+    color: #64748b;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.history-empty-card {
+    max-width: 700px;
+
+    margin: 70px auto;
+
+    border-radius: 20px !important;
+
+    border: 1px solid #e3e8f0 !important;
+
+    box-shadow:
+        0 10px 30px rgba(15, 23, 42, 0.06) !important;
+
+    text-align: center;
+}
+
+
+.history-empty-card .MuiCardContent-root {
+    padding: 55px 30px !important;
+}
+
+
+.history-empty-icon {
+    font-size: 60px !important;
+
+    color: #94a3b8 !important;
+
+    margin-bottom: 15px;
+}
+
+
+.history-empty-title {
+    font-size: 20px !important;
+
+    font-weight: 800 !important;
+
+    color: #1e293b !important;
+
+    margin-bottom: 8px !important;
+}
+
+
+.history-empty-text {
+    font-size: 13px !important;
+
+    color: #64748b !important;
+
+    line-height: 1.6 !important;
+}
+
+
+/* =========================================================
+   HISTORY LIST
+========================================================= */
+
+.history-list {
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 22px;
+}
+
+
+/* =========================================================
+   HISTORY CARD
+========================================================= */
+
+.history-card {
+    border-radius: 18px !important;
+
+    border: 1px solid #e3e8f0 !important;
+
+    box-shadow:
+        0 8px 25px rgba(15, 23, 42, 0.055) !important;
+
+    background: #ffffff !important;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.history-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 14px 32px rgba(15, 23, 42, 0.09) !important;
+}
+
+
+.history-card .MuiCardContent-root {
+    padding: 24px !important;
+}
+
+
+/* =========================================================
+   CARD TOP
+========================================================= */
+
+.history-card-top {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding-bottom: 19px;
+
+    border-bottom: 1px solid #eef2f7;
+}
+
+
+.history-image-icon {
+    width: 45px;
+    height: 45px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+.history-image-icon svg {
+    font-size: 23px;
+}
+
+
+.history-file-section {
+    min-width: 0;
+
+    flex: 1;
+}
+
+
+.history-file-name {
+    font-size: 14px !important;
+
+    font-weight: 700 !important;
+
+    color: #1e293b !important;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+.history-date {
+    margin-top: 4px !important;
+
+    font-size: 11px !important;
+
+    color: #94a3b8 !important;
+}
+
+
+.history-condition {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+
+.history-normal-icon {
+    font-size: 21px !important;
+
+    color: #16a34a !important;
+}
+
+
+.history-damaged-icon {
+    font-size: 21px !important;
+
+    color: #dc2626 !important;
+}
+
+
+/* =========================================================
+   CHIPS
+========================================================= */
+
+.history-normal-chip {
+    height: 27px !important;
+
+    background: #dcfce7 !important;
+
+    color: #15803d !important;
+
+    font-size: 11px !important;
+
+    font-weight: 700 !important;
+}
+
+
+.history-damaged-chip {
+    height: 27px !important;
+
+    background: #fee2e2 !important;
+
+    color: #b91c1c !important;
+
+    font-size: 11px !important;
+
+    font-weight: 700 !important;
+}
+
+
+/* =========================================================
+   VEHICLE INFORMATION
+========================================================= */
+
+.history-vehicle {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 19px;
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+    background: #f8fafc;
+
+    border: 1px solid #eef2f7;
+}
+
+
+.history-vehicle > svg {
+    font-size: 25px;
+
+    color: #2563eb;
+}
+
+
+.history-info-label {
+    font-size: 11px !important;
+
+    color: #94a3b8 !important;
+
+    font-weight: 600 !important;
+
+    margin-bottom: 3px !important;
+}
+
+
+.history-info-value {
+    font-size: 14px !important;
+
+    color: #1e293b !important;
+
+    font-weight: 700 !important;
+}
+
+
+.history-registration {
+    font-size: 11px !important;
+
+    color: #64748b !important;
+
+    margin-top: 2px !important;
+}
+
+
+/* =========================================================
+   CONFIDENCE
+========================================================= */
+
+.history-confidence {
+    margin-top: 19px;
+}
+
+
+.history-confidence-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 8px;
+}
+
+
+.history-confidence-value {
+    font-size: 15px !important;
+
+    font-weight: 800 !important;
+
+    color: #2563eb !important;
+}
+
+
+.history-confidence-track {
+    height: 8px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    background: #e2e8f0;
+}
+
+
+.history-confidence-fill {
+    height: 100%;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #60a5fa,
+            #2563eb
+        );
+
+    transition: width 0.5s ease;
+}
+
+
+/* =========================================================
+   RECOMMENDATION
+========================================================= */
+
+.history-recommendation {
+    margin-top: 19px;
+
+    padding: 16px;
+
+    border-radius: 12px;
+
+    background: #f8fafc;
+
+    border-left: 4px solid #2563eb;
+
+    border-top: 1px solid #eef2f7;
+
+    border-right: 1px solid #eef2f7;
+
+    border-bottom: 1px solid #eef2f7;
+}
+
+
+.history-recommendation-title {
+    font-size: 12px !important;
+
+    font-weight: 800 !important;
+
+    color: #334155 !important;
+
+    margin-bottom: 6px !important;
+}
+
+
+.history-recommendation-text {
+    font-size: 12px !important;
+
+    color: #64748b !important;
+
+    line-height: 1.65 !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .history-list {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .image-history-page {
+        padding: 18px;
+    }
+
+
+    .image-history-header {
+        padding: 20px;
+
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .history-header-left {
+        width: 100%;
+    }
+
+
+    .history-title {
+        font-size: 22px !important;
+    }
+
+
+    .history-subtitle {
+        font-size: 12px !important;
+    }
+
+
+    .history-refresh-button {
+        width: 100%;
+    }
+
+
+    .history-card .MuiCardContent-root {
+        padding: 20px !important;
+    }
+
+
+    .history-card-top {
+        align-items: flex-start;
+
+        flex-wrap: wrap;
+    }
+
+
+    .history-condition {
+        width: 100%;
+
+        margin-top: 4px;
+
+        padding-left: 59px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 450px) {
+
+    .image-history-page {
+        padding: 12px;
+    }
+
+
+    .image-history-header {
+        padding: 17px;
+    }
+
+
+    .history-header-icon {
+        width: 46px;
+        height: 46px;
+    }
+
+
+    .history-header-icon svg {
+        font-size: 24px;
+    }
+
+
+    .history-title {
+        font-size: 19px !important;
+    }
+
+
+    .history-subtitle {
+        font-size: 11px !important;
+    }
+
+
+    .history-condition {
+        padding-left: 0;
+    }
+
+}

@@ -1,0 +1,984 @@
+/* =========================================================
+   IMAGE AI PAGE
+========================================================= */
+
+.image-ai-page {
+    min-height: 100vh;
+    padding: 32px;
+    background: #f4f7fc;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.image-ai-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 1400px;
+    margin: 0 auto 28px;
+
+    padding: 26px 30px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5eaf2;
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.06);
+}
+
+
+.image-ai-title {
+    font-size: 27px !important;
+    font-weight: 800 !important;
+    color: #172033 !important;
+
+    margin-bottom: 6px !important;
+}
+
+
+.image-ai-subtitle {
+    font-size: 14px !important;
+    color: #64748b !important;
+    line-height: 1.6 !important;
+}
+
+
+.ai-header-icon {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 16px;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #1d4ed8
+    );
+
+    color: #ffffff;
+
+    box-shadow:
+        0 10px 25px rgba(37, 99, 235, 0.25);
+}
+
+
+.ai-header-icon svg {
+    font-size: 30px;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.image-ai-content {
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.15fr)
+        minmax(0, 0.85fr);
+
+    gap: 26px;
+
+    align-items: start;
+}
+
+
+/* =========================================================
+   UPLOAD CARD
+========================================================= */
+
+.image-upload-card {
+    border-radius: 20px !important;
+
+    border: 1px solid #e3e8f0 !important;
+
+    box-shadow:
+        0 10px 30px rgba(15, 23, 42, 0.06) !important;
+
+    background: #ffffff !important;
+}
+
+
+.image-upload-card .MuiCardContent-root {
+    padding: 28px !important;
+}
+
+
+.section-title {
+    font-size: 20px !important;
+    font-weight: 800 !important;
+
+    color: #172033 !important;
+
+    margin-bottom: 7px !important;
+}
+
+
+.section-description {
+    font-size: 13px !important;
+    line-height: 1.6 !important;
+
+    color: #64748b !important;
+
+    margin-bottom: 24px !important;
+}
+
+
+/* =========================================================
+   VEHICLE SELECT
+========================================================= */
+
+.image-upload-card .MuiFormControl-root {
+    margin-bottom: 24px;
+}
+
+
+.image-upload-card .MuiInputLabel-root {
+    font-size: 14px !important;
+    color: #64748b !important;
+}
+
+
+.image-upload-card .MuiInputLabel-root.Mui-focused {
+    color: #2563eb !important;
+}
+
+
+.image-upload-card .MuiOutlinedInput-root {
+    border-radius: 12px !important;
+
+    background: #ffffff !important;
+
+    font-size: 14px !important;
+
+    transition: all 0.2s ease !important;
+}
+
+
+.image-upload-card
+.MuiOutlinedInput-root:hover
+.MuiOutlinedInput-notchedOutline {
+    border-color: #94a3b8 !important;
+}
+
+
+.image-upload-card
+.MuiOutlinedInput-root.Mui-focused
+.MuiOutlinedInput-notchedOutline {
+    border-color: #2563eb !important;
+
+    border-width: 2px !important;
+}
+
+
+.image-upload-card .MuiSelect-select {
+    padding: 15px 14px !important;
+}
+
+
+/* =========================================================
+   MENU ITEMS
+========================================================= */
+
+.MuiMenu-paper {
+    border-radius: 12px !important;
+
+    margin-top: 6px !important;
+
+    box-shadow:
+        0 12px 35px rgba(15, 23, 42, 0.14) !important;
+}
+
+
+.MuiMenuItem-root {
+    font-size: 14px !important;
+
+    padding: 11px 16px !important;
+
+    color: #334155 !important;
+}
+
+
+.MuiMenuItem-root:hover {
+    background: #eff6ff !important;
+}
+
+
+.MuiMenuItem-root.Mui-selected {
+    background: #dbeafe !important;
+
+    color: #1d4ed8 !important;
+
+    font-weight: 600 !important;
+}
+
+
+.MuiMenuItem-root.Mui-selected:hover {
+    background: #dbeafe !important;
+}
+
+
+/* =========================================================
+   UPLOAD AREA
+========================================================= */
+
+.upload-area {
+    min-height: 280px;
+
+    padding: 35px 25px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    border: 2px dashed #cbd5e1;
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #f8fafc 0%,
+            #ffffff 100%
+        );
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.25s ease,
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.upload-area:hover {
+    border-color: #2563eb;
+
+    background: #f8fbff;
+
+    transform: translateY(-2px);
+}
+
+
+.upload-icon {
+    font-size: 54px !important;
+
+    color: #2563eb !important;
+
+    margin-bottom: 14px;
+}
+
+
+.upload-title {
+    font-size: 17px !important;
+
+    font-weight: 700 !important;
+
+    color: #1e293b !important;
+
+    margin-bottom: 5px !important;
+}
+
+
+.upload-text {
+    font-size: 13px !important;
+
+    color: #94a3b8 !important;
+
+    margin-bottom: 20px !important;
+}
+
+
+/* =========================================================
+   UPLOAD BUTTON
+========================================================= */
+
+.upload-button {
+    min-width: 140px !important;
+
+    min-height: 42px !important;
+
+    border-radius: 10px !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #1d4ed8
+        ) !important;
+
+    color: #ffffff !important;
+
+    text-transform: none !important;
+
+    font-size: 13px !important;
+
+    font-weight: 700 !important;
+
+    box-shadow:
+        0 8px 20px rgba(37, 99, 235, 0.2) !important;
+}
+
+
+.upload-button:hover {
+    background:
+        linear-gradient(
+            135deg,
+            #1d4ed8,
+            #1e40af
+        ) !important;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   PREVIEW SECTION
+========================================================= */
+
+.preview-section {
+    margin-top: 22px;
+}
+
+
+.preview-title {
+    font-size: 14px !important;
+
+    font-weight: 700 !important;
+
+    color: #334155 !important;
+
+    margin-bottom: 12px !important;
+}
+
+
+.image-preview-container {
+    width: 100%;
+
+    min-height: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px;
+
+    box-sizing: border-box;
+
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+}
+
+
+.vehicle-preview {
+    display: block;
+
+    width: 100%;
+
+    max-height: 390px;
+
+    object-fit: contain;
+
+    border-radius: 12px;
+}
+
+
+/* =========================================================
+   ACTION BUTTONS
+========================================================= */
+
+.action-buttons {
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+
+.analyze-button {
+    flex: 1;
+
+    min-height: 46px !important;
+
+    border-radius: 11px !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #1d4ed8
+        ) !important;
+
+    color: #ffffff !important;
+
+    text-transform: none !important;
+
+    font-size: 13px !important;
+
+    font-weight: 700 !important;
+
+    box-shadow:
+        0 8px 20px rgba(37, 99, 235, 0.2) !important;
+}
+
+
+.analyze-button:hover {
+    background:
+        linear-gradient(
+            135deg,
+            #1d4ed8,
+            #1e40af
+        ) !important;
+
+    transform: translateY(-1px);
+}
+
+
+.analyze-button svg {
+    font-size: 19px;
+}
+
+
+.reset-button {
+    min-width: 100px !important;
+
+    min-height: 46px !important;
+
+    border-radius: 11px !important;
+
+    border: 1px solid #cbd5e1 !important;
+
+    color: #475569 !important;
+
+    text-transform: none !important;
+
+    font-size: 13px !important;
+
+    font-weight: 600 !important;
+}
+
+
+.reset-button:hover {
+    border-color: #94a3b8 !important;
+
+    background: #f8fafc !important;
+}
+
+
+/* =========================================================
+   PROGRESS
+========================================================= */
+
+.progress-container {
+    margin-top: 18px;
+
+    padding: 14px 16px;
+
+    border-radius: 12px;
+
+    background: #eff6ff;
+}
+
+
+.progress-container .MuiLinearProgress-root {
+    height: 6px;
+
+    border-radius: 10px;
+
+    background: #dbeafe;
+}
+
+
+.progress-container .MuiLinearProgress-bar {
+    border-radius: 10px;
+
+    background: #2563eb;
+}
+
+
+.progress-container .MuiTypography-root {
+    margin-top: 9px;
+
+    font-size: 12px;
+
+    color: #475569;
+}
+
+
+/* =========================================================
+   ALERTS
+========================================================= */
+
+.image-alert {
+    margin-top: 18px !important;
+
+    border-radius: 11px !important;
+
+    font-size: 13px !important;
+
+    line-height: 1.5 !important;
+}
+
+
+/* =========================================================
+   RESULT CARD
+========================================================= */
+
+.result-card {
+    border-radius: 20px !important;
+
+    border: 1px solid #e3e8f0 !important;
+
+    box-shadow:
+        0 10px 30px rgba(15, 23, 42, 0.06) !important;
+
+    background: #ffffff !important;
+
+    overflow: hidden;
+}
+
+
+.result-card .MuiCardContent-root {
+    padding: 28px !important;
+}
+
+
+/* =========================================================
+   ANALYZED VEHICLE
+========================================================= */
+
+.result-card
+.MuiBox-root[style] {
+    border: 1px solid #e2e8f0;
+}
+
+
+/* =========================================================
+   RESULT STATUS
+========================================================= */
+
+.result-status {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    padding: 17px;
+
+    margin-top: 18px;
+
+    border-radius: 14px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e8edf4;
+}
+
+
+.result-status svg {
+    flex-shrink: 0;
+}
+
+
+.normal-icon {
+    color: #16a34a !important;
+
+    font-size: 27px !important;
+}
+
+
+.damaged-icon {
+    color: #dc2626 !important;
+
+    font-size: 27px !important;
+}
+
+
+.condition-label {
+    flex: 1;
+
+    font-size: 13px !important;
+
+    font-weight: 700 !important;
+
+    color: #334155 !important;
+}
+
+
+/* =========================================================
+   RESULT CHIPS
+========================================================= */
+
+.normal-chip {
+    background: #dcfce7 !important;
+
+    color: #15803d !important;
+
+    font-size: 12px !important;
+
+    font-weight: 700 !important;
+}
+
+
+.damaged-chip {
+    background: #fee2e2 !important;
+
+    color: #b91c1c !important;
+
+    font-size: 12px !important;
+
+    font-weight: 700 !important;
+}
+
+
+/* =========================================================
+   CONFIDENCE
+========================================================= */
+
+.confidence-section {
+    margin-top: 25px;
+}
+
+
+.confidence-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+}
+
+
+.confidence-header .MuiTypography-root {
+    font-size: 13px !important;
+
+    color: #475569 !important;
+
+    font-weight: 600 !important;
+}
+
+
+.confidence-value {
+    font-size: 18px !important;
+
+    color: #2563eb !important;
+
+    font-weight: 800 !important;
+}
+
+
+.confidence-bar {
+    height: 8px !important;
+
+    border-radius: 10px !important;
+
+    background: #e2e8f0 !important;
+}
+
+
+.confidence-bar .MuiLinearProgress-bar {
+    border-radius: 10px !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            #60a5fa,
+            #2563eb
+        ) !important;
+}
+
+
+/* =========================================================
+   RECOMMENDATION
+========================================================= */
+
+.recommendation-box {
+    margin-top: 22px;
+
+    padding: 18px;
+
+    border-radius: 14px;
+
+    background: #f8fafc;
+
+    border-left: 4px solid #2563eb;
+
+    border-top: 1px solid #e8edf4;
+    border-right: 1px solid #e8edf4;
+    border-bottom: 1px solid #e8edf4;
+}
+
+
+.recommendation-title {
+    font-size: 13px !important;
+
+    font-weight: 800 !important;
+
+    color: #1e293b !important;
+
+    margin-bottom: 8px !important;
+}
+
+
+.recommendation-text {
+    font-size: 13px !important;
+
+    line-height: 1.7 !important;
+
+    color: #64748b !important;
+}
+
+
+/* =========================================================
+   SAVE ANALYSIS BUTTON
+========================================================= */
+
+.save-analysis-button {
+    margin-top: 22px !important;
+
+    min-height: 48px !important;
+
+    border-radius: 12px !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #1d4ed8
+        ) !important;
+
+    color: #ffffff !important;
+
+    text-transform: none !important;
+
+    font-size: 13px !important;
+
+    font-weight: 700 !important;
+
+    box-shadow:
+        0 10px 24px rgba(37, 99, 235, 0.22) !important;
+
+    transition:
+        all 0.25s ease !important;
+}
+
+
+.save-analysis-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 14px 30px rgba(37, 99, 235, 0.30) !important;
+}
+
+
+.save-analysis-button:disabled {
+    background: #cbd5e1 !important;
+
+    box-shadow: none !important;
+
+    transform: none !important;
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .image-ai-content {
+        grid-template-columns: 1fr;
+    }
+
+    .result-card {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .image-ai-page {
+        padding: 18px;
+    }
+
+
+    .image-ai-header {
+        padding: 20px;
+
+        margin-bottom: 18px;
+
+        border-radius: 15px;
+    }
+
+
+    .image-ai-title {
+        font-size: 22px !important;
+    }
+
+
+    .image-ai-subtitle {
+        font-size: 12px !important;
+    }
+
+
+    .ai-header-icon {
+        width: 48px;
+        height: 48px;
+
+        border-radius: 13px;
+    }
+
+
+    .ai-header-icon svg {
+        font-size: 25px;
+    }
+
+
+    .image-upload-card .MuiCardContent-root,
+    .result-card .MuiCardContent-root {
+        padding: 20px !important;
+    }
+
+
+    .section-title {
+        font-size: 18px !important;
+    }
+
+
+    .upload-area {
+        min-height: 230px;
+
+        padding: 25px 15px;
+    }
+
+
+    .upload-icon {
+        font-size: 45px !important;
+    }
+
+
+    .image-preview-container {
+        min-height: 220px;
+    }
+
+
+    .vehicle-preview {
+        max-height: 280px;
+    }
+
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+
+    .analyze-button,
+    .reset-button {
+        width: 100%;
+    }
+
+
+    .result-status {
+        flex-wrap: wrap;
+    }
+
+
+    .condition-label {
+        flex: unset;
+
+        width: calc(100% - 45px);
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 450px) {
+
+    .image-ai-page {
+        padding: 12px;
+    }
+
+
+    .image-ai-header {
+        padding: 17px;
+    }
+
+
+    .image-ai-title {
+        font-size: 19px !important;
+    }
+
+
+    .image-ai-subtitle {
+        font-size: 11px !important;
+    }
+
+
+    .ai-header-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+
+    .ai-header-icon svg {
+        font-size: 22px;
+    }
+
+
+    .image-upload-card .MuiCardContent-root,
+    .result-card .MuiCardContent-root {
+        padding: 16px !important;
+    }
+
+
+    .upload-area {
+        min-height: 210px;
+    }
+
+
+    .preview-title {
+        font-size: 13px !important;
+    }
+
+
+    .confidence-value {
+        font-size: 16px !important;
+    }
+
+}

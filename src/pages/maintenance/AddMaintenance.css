@@ -1,0 +1,435 @@
+/* =====================================================
+   ADD MAINTENANCE
+   SOBY ENGINEERS
+   ===================================================== */
+
+.maintenance-form-page {
+  min-height: 100vh;
+  padding: 32px 20px;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(212, 175, 55, 0.10),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #fffaf0 0%,
+      #f8f1e5 50%,
+      #fffdf8 100%
+    );
+  box-sizing: border-box;
+}
+
+.maintenance-form-container {
+  max-width: 1250px !important;
+}
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+.maintenance-form-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.maintenance-form-back {
+  width: 48px;
+  height: 48px;
+  background: #7a1f3d !important;
+  color: #ffffff !important;
+  border-radius: 14px !important;
+  transition: 0.25s ease !important;
+}
+
+.maintenance-form-back:hover {
+  background: #5e1730 !important;
+  transform: translateX(-3px);
+}
+
+.maintenance-form-title {
+  color: #5e1730 !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.5px;
+}
+
+.maintenance-form-subtitle {
+  color: #806b61 !important;
+  margin-top: 5px !important;
+}
+
+/* =====================================================
+   ALERT
+   ===================================================== */
+
+.maintenance-form-alert {
+  margin-bottom: 20px !important;
+  border-radius: 12px !important;
+}
+
+/* =====================================================
+   MAIN CARD
+   ===================================================== */
+
+.maintenance-form-card {
+  overflow: hidden;
+  border-radius: 26px !important;
+  border: 1px solid rgba(122, 31, 61, 0.12);
+  background: #ffffff !important;
+  box-shadow:
+    0 25px 70px rgba(94, 23, 48, 0.12),
+    0 5px 20px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* =====================================================
+   IMAGE SECTION
+   ===================================================== */
+
+.maintenance-image-section {
+  position: relative;
+  min-height: 650px;
+  overflow: hidden;
+}
+
+.maintenance-image-wrapper {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.maintenance-preview-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.7s ease;
+}
+
+.maintenance-image-wrapper:hover
+  .maintenance-preview-image {
+  transform: scale(1.04);
+}
+
+.maintenance-image-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(94, 23, 48, 0.18) 0%,
+      rgba(94, 23, 48, 0.70) 55%,
+      rgba(45, 10, 24, 0.96) 100%
+    );
+}
+
+.maintenance-image-content {
+  position: absolute;
+  left: 42px;
+  right: 42px;
+  bottom: 42px;
+  color: #ffffff;
+  z-index: 2;
+}
+
+.maintenance-image-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 17px;
+  margin-bottom: 18px;
+
+  background: rgba(212, 175, 55, 0.18);
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  backdrop-filter: blur(8px);
+
+  color: #d4af37;
+}
+
+.maintenance-image-icon svg {
+  font-size: 32px;
+}
+
+.maintenance-image-title {
+  font-weight: 800 !important;
+  margin-bottom: 10px !important;
+  color: #ffffff !important;
+}
+
+.maintenance-image-text {
+  max-width: 420px;
+  line-height: 1.7 !important;
+  color: rgba(255, 255, 255, 0.86) !important;
+  margin-bottom: 24px !important;
+}
+
+/* =====================================================
+   FEATURE ITEMS
+   ===================================================== */
+
+.maintenance-feature {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-top: 13px;
+  color: rgba(255, 255, 255, 0.94);
+}
+
+.maintenance-feature svg {
+  color: #d4af37;
+  font-size: 21px;
+}
+
+/* =====================================================
+   FORM SECTION
+   ===================================================== */
+
+.maintenance-form-section {
+  background: #fffdf9;
+}
+
+.maintenance-form-inner {
+  padding: 48px;
+}
+
+/* =====================================================
+   FORM HEADING
+   ===================================================== */
+
+.maintenance-form-heading {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 34px;
+  padding-bottom: 24px;
+
+  border-bottom:
+    1px solid rgba(122, 31, 61, 0.10);
+}
+
+.maintenance-heading-icon {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+  background: #7a1f3d;
+  color: #d4af37;
+
+  box-shadow:
+    0 8px 18px rgba(122, 31, 61, 0.18);
+}
+
+.maintenance-heading-icon svg {
+  font-size: 27px;
+}
+
+.maintenance-form-heading-title {
+  color: #5e1730 !important;
+  font-weight: 800 !important;
+}
+
+.maintenance-form-heading-text {
+  color: #806b61 !important;
+  font-size: 14px !important;
+  margin-top: 3px !important;
+}
+
+/* =====================================================
+   INPUTS
+   ===================================================== */
+
+.maintenance-form-inner
+  .MuiOutlinedInput-root {
+  border-radius: 11px;
+  background: #ffffff;
+  transition: 0.2s ease;
+}
+
+.maintenance-form-inner
+  .MuiOutlinedInput-root:hover
+  .MuiOutlinedInput-notchedOutline {
+  border-color: #7a1f3d;
+}
+
+.maintenance-form-inner
+  .MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: #7a1f3d;
+  border-width: 2px;
+}
+
+.maintenance-form-inner
+  .MuiInputLabel-root.Mui-focused {
+  color: #7a1f3d;
+}
+
+.maintenance-form-inner
+  .MuiSelect-select {
+  min-height: 1.4em;
+}
+
+/* =====================================================
+   BUTTONS
+   ===================================================== */
+
+.maintenance-form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+  margin-top: 32px;
+  padding-top: 24px;
+
+  border-top:
+    1px solid rgba(122, 31, 61, 0.10);
+}
+
+.maintenance-cancel-button {
+  padding: 11px 26px !important;
+  border-radius: 11px !important;
+  border-color: #7a1f3d !important;
+  color: #7a1f3d !important;
+  font-weight: 700 !important;
+  text-transform: none !important;
+}
+
+.maintenance-cancel-button:hover {
+  border-color: #5e1730 !important;
+  background: rgba(122, 31, 61, 0.05) !important;
+}
+
+.maintenance-save-button {
+  padding: 11px 27px !important;
+  border-radius: 11px !important;
+
+  background: #7a1f3d !important;
+  color: #ffffff !important;
+
+  font-weight: 700 !important;
+  text-transform: none !important;
+
+  box-shadow:
+    0 8px 20px rgba(122, 31, 61, 0.20) !important;
+
+  transition: 0.25s ease !important;
+}
+
+.maintenance-save-button:hover {
+  background: #5e1730 !important;
+  transform: translateY(-2px);
+  box-shadow:
+    0 12px 26px rgba(122, 31, 61, 0.26) !important;
+}
+
+/* =====================================================
+   LOADING
+   ===================================================== */
+
+.maintenance-form-loading {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fffaf0,
+      #f8f1e5
+    );
+}
+
+.maintenance-form-loading-text {
+  margin-top: 15px !important;
+  color: #6b4b3e !important;
+  font-weight: 600 !important;
+}
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 900px) {
+  .maintenance-form-page {
+    padding: 24px 15px;
+  }
+
+  .maintenance-form-inner {
+    padding: 32px;
+  }
+
+  .maintenance-image-section {
+    min-height: 480px;
+  }
+
+  .maintenance-image-content {
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .maintenance-form-page {
+    padding: 15px 10px;
+  }
+
+  .maintenance-form-header {
+    align-items: flex-start;
+  }
+
+  .maintenance-form-title {
+    font-size: 25px !important;
+  }
+
+  .maintenance-form-subtitle {
+    font-size: 13px !important;
+  }
+
+  .maintenance-form-card {
+    border-radius: 18px !important;
+  }
+
+  .maintenance-image-section {
+    min-height: 430px;
+  }
+
+  .maintenance-image-content {
+    left: 24px;
+    right: 24px;
+    bottom: 24px;
+  }
+
+  .maintenance-image-title {
+    font-size: 28px !important;
+  }
+
+  .maintenance-form-inner {
+    padding: 24px 18px;
+  }
+
+  .maintenance-form-heading {
+    align-items: flex-start;
+  }
+
+  .maintenance-form-buttons {
+    flex-direction: column-reverse;
+  }
+
+  .maintenance-save-button,
+  .maintenance-cancel-button {
+    width: 100%;
+  }
+}
